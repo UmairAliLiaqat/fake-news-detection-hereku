@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>news checker</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    </head>
+    <body>
+        <h1 class="title">NEWS CONFIRMER</h1>
+        <form class="news-form" method="POST" action="/check_news">
+            <textarea class="news-field" type="text" name="news"></textarea><br><br>
+            <button class="news-btn" name="">check</button>
+        </form>
+        <h1 class="title">{{pred}}</h1>
+</html>
